@@ -1,0 +1,63 @@
+{
+  "name": "to-html",
+  "version": "0.0.0",
+  "description": "Microservice to convert data and template into html",
+  "homepage": "https://github.com/uci-soe/to-html",
+  "author": {
+    "name": "Rhett Lowe",
+    "email": "rng2ml@gmail.com",
+    "url": "rhettl.com"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "keywords": [
+    "template",
+    "html",
+    "dustjs",
+    "rest",
+    "microservice"
+  ],
+  "devDependencies": {
+    "request": "^2.69.0",
+    "eslint-config-xo-space": "^0.7.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-line-ending-corrector": "^1.0.1",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-mocha": "^2.0.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-nsp": "^2.1.0",
+    "gulp-coveralls": "^0.1.0"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "deep-extend": "^0.4.1",
+    "if-err": "^0.1.1",
+    "is-url": "^1.2.1",
+    "map-stream": "0.0.6",
+    "q": "^1.4.1",
+    "request": "^2.69.0",
+    "restify": "^4.0.3",
+    "swig": "^1.4.2",
+    "vinyl": "^1.1.1",
+    "vinyl-fs": "^2.3.1"
+  },
+  "scripts": {
+    "start": "node ./bin/www.js",
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "mocha": true
+    }
+  },
+  "repository": "uci-soe/to-html"
+}
