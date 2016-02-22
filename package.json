@@ -37,6 +37,7 @@
   },
   "license": "BSD-3-Clause",
   "dependencies": {
+    "aproba": "^1.0.1",
     "deep-extend": "^0.4.1",
     "if-err": "^0.1.1",
     "is-url": "^1.2.1",
