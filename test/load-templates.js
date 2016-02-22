@@ -1,9 +1,9 @@
 'use strict';
 
 var assert = require('assert');
-var File = require('../lib/file');
+var loadTemplates = require('../lib/load-templates');
 
-describe('File', function () {
+describe('Load Templates', function () {
   it('should have unit test!', function () {
     assert(false, 'we expected this package author to add actual unit tests.');
   });

@@ -1,9 +1,9 @@
 'use strict';
 
 var assert = require('assert');
-var File = require('../lib/file');
+var probe = require('../lib/aproba-overload');
 
-describe('File', function () {
+describe('Aproba Overload', function () {
   it('should have unit test!', function () {
     assert(false, 'we expected this package author to add actual unit tests.');
   });
