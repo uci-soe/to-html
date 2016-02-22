@@ -29,10 +29,18 @@ var server = restify.createServer({
 });
 
 
-server.post('/', restify.bodyParser(), app.index);
+server.post('/', restify.bodyParser(), function (req, res, next) {
+  app.compile('test', {who: 'Rhett'}, function(err, data){
+    next.ifError(err);
+    res.send(data);
+    next();
+  });
+});
 
 templateLoader('../templates', template, function (err) {
   error.if(err);
 
-  server.listen(process.env.npm_package_config_port || 15000);
+  server.listen(process.env.npm_package_config_port || 15000, function () {
+    console.log('Server Started.');
+  });
 });
