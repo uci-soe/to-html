@@ -175,7 +175,7 @@
         </div>
 
         {% for s in surveys %}
-            {% if s.written.length() %}
+            {% if s.written|hasProps %}
                 <div class="course-header row">
                     <div class="row">
                         <div class="col-xs-2"><h3>{{ term }}</h3></div>

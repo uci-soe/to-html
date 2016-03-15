@@ -20,17 +20,18 @@
     "microservice"
   ],
   "devDependencies": {
-    "request": "^2.69.0",
-    "eslint-config-xo-space": "^0.7.0",
+    "chai": "^3.5.0",
+    "eslint-config-rhett": "^0.1.1",
     "gulp": "^3.9.0",
-    "gulp-eslint": "^1.0.0",
+    "gulp-coveralls": "^0.1.0",
+    "gulp-eslint": "^2.0.0",
     "gulp-exclude-gitignore": "^1.0.0",
-    "gulp-line-ending-corrector": "^1.0.1",
     "gulp-istanbul": "^0.10.3",
+    "gulp-line-ending-corrector": "^1.0.1",
     "gulp-mocha": "^2.0.0",
-    "gulp-plumber": "^1.0.0",
     "gulp-nsp": "^2.1.0",
-    "gulp-coveralls": "^0.1.0"
+    "gulp-plumber": "^1.0.0",
+    "request": "^2.69.0"
   },
   "engines": {
     "node": ">=4.0.0"
@@ -39,7 +40,7 @@
   "dependencies": {
     "aproba": "^1.0.1",
     "deep-extend": "^0.4.1",
-    "if-err": "^0.1.1",
+    "if-err": "^0.3.0",
     "is-url": "^1.2.1",
     "map-stream": "0.0.6",
     "q": "^1.4.1",
@@ -55,10 +56,7 @@
     "test": "gulp"
   },
   "eslintConfig": {
-    "extends": "xo-space",
-    "env": {
-      "mocha": true
-    }
+    "extends": "rhett"
   },
   "repository": "uci-soe/to-html"
 }
