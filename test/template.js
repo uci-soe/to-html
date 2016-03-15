@@ -71,7 +71,7 @@ describe('Template', function () {
     });
     it('should file to registry', function (done) {
       assert(!Template.has('test'), 'testfile somehow got into registry early(??)');
-      Template.add(testFile, function (err, file) {
+      Template.add(testFile, function (err) {
         assert.ifError(err);
         assert(Template.has('test'), 'testfile failed to get into the registry');
         done();

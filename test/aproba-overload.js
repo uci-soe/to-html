@@ -14,8 +14,8 @@ describe('Aproba Overload', function () {
     assert(!probe('SSN', ['s', 's']));
   });
   it('should throw error on request', function () {
-    assert.throws(function(){
+    assert.throws(function () {
       assert(probe('SSN', ['s', 's'], true));
-    })
+    });
   });
 });

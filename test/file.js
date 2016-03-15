@@ -25,9 +25,8 @@ describe('File', function () {
     assert(File.fromVinyl(testVinyl).loadContents, 'failed to convert vinyl and pass duck typing');
   });
 
-  it('should recognize Files via duck typing', function(){
+  it('should recognize Files via duck typing', function () {
     assert(File.isFile(testFile), 'failed to recognize test File');
-    //assert(!File.isFile(testVinyl), 'erroneously recognized test Vinyl');
   });
 
   describe('#loadContents', function () {
