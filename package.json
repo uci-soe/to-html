@@ -1,6 +1,6 @@
 {
   "name": "to-html",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Microservice to convert data and template into html",
   "homepage": "https://github.com/uci-soe/to-html",
   "author": {
