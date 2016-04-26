@@ -7,6 +7,7 @@ var extend         = require('deep-extend');
 var template       = require('../lib/template');
 var templateLoader = require('../lib/load-templates');
 var app            = require('../lib')(template);
+var path           = require('path');
 
 var pkg = require('../package.json');
 
@@ -55,7 +56,7 @@ server.get('/', function (req, res, next) {
   next();
 });
 
-templateLoader('../templates', template, function (err) {
+templateLoader(path.normalize(path.join(__dirname, '../templates')), template, function (err) {
   error.if(err);
 
   server.listen(process.env.PORT || 15000, function () {
