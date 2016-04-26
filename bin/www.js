@@ -50,6 +50,10 @@ server.post('/:template', restify.bodyParser(), function (req, res, next) {
     next();
   });
 });
+server.get('/', function (req, res, next) {
+  res.send(template.list());
+  next();
+});
 
 templateLoader('../templates', template, function (err) {
   error.if(err);
@@ -58,6 +62,7 @@ templateLoader('../templates', template, function (err) {
     /*eslint-disable no-console */
 
     console.log('%s server started at %s', server.name, server.url);
+    console.log(template.list());
 
     /*eslint-denable no-console */
   });
